@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="streetFighter.css">
+    <title>Mini Street Fighter</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="title">STREET FIGHTER</div>
+        
+        <div class="health-bars">
+            <div class="player-health">
+                <div class="player-name">PLAYER 1</div>
+                <div class="health-bar-bg">
+                    <div class="health-bar-fill" id="health1"></div>
+                </div>
+            </div>
+            <div class="player-health">
+                <div class="player-name">PLAYER 2</div>
+                <div class="health-bar-bg">
+                    <div class="health-bar-fill" id="health2"></div>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <div class="controls">
+            <div class="controls-grid">
+                <div>
+                    <strong>Player 1 (Red)</strong><br>
+                    <span class="key">W</span> Jump<br>
+                    <span class="key">A</span> Left / <span class="key">D</span> Right<br>
+                    <span class="key">SPACE</span> Punch
+                </div>
+                <div>
+                    <strong>Player 2 (Blue)</strong><br>
+                    <span class="key">↑</span> Jump<br>
+                    <span class="key">←</span> Left / <span class="key">→</span> Right<br>
+                    <span class="key">ENTER</span> Punch
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-over" id="gameOver">
+        <div id="winner"></div>
+        <button onclick="resetGame()">PLAY AGAIN</button>
+    </div>
+
+    <script src="streetFighter.js"></script>
+</body>
+</html>
