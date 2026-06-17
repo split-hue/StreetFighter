@@ -1,2 +1,1 @@
-![Igra](<solitaire intro slika.png>)
-![Igra](pasjansa-GIT.gif)
+![Igra](<street_fighter intro slika.png>)
